@@ -12,3 +12,17 @@ C:\Users\maria\Desktop\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Se
 C:\Users\maria\Desktop\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\bin\Debug\netcoreapp2.1\Senai.inlock.WebApi.pdb
 C:\Users\maria\Desktop\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.dll
 C:\Users\maria\Desktop\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.pdb
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\bin\Debug\netcoreapp2.1\Senai.inlock.WebApi.deps.json
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\bin\Debug\netcoreapp2.1\Senai.inlock.WebApi.runtimeconfig.json
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\bin\Debug\netcoreapp2.1\Senai.inlock.WebApi.runtimeconfig.dev.json
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\bin\Debug\netcoreapp2.1\Senai.inlock.WebApi.dll
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\bin\Debug\netcoreapp2.1\Senai.inlock.WebApi.pdb
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.csprojAssemblyReference.cache
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.RazorAssemblyInfo.cache
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.RazorAssemblyInfo.cs
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.AssemblyInfoInputs.cache
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.AssemblyInfo.cs
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.dll
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-inlock-Mariana-Pedro\Senai.inlock.WebApi\Senai.inlock.WebApi\obj\Debug\netcoreapp2.1\Senai.inlock.WebApi.pdb
