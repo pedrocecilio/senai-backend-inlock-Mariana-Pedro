@@ -1,5 +1,4 @@
-﻿/*
-using Senai.inlock.WebApi.Domains;
+﻿using Senai.inlock.WebApi.Domains;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,4 +51,3 @@ namespace Senai.inlock.WebApi.Interfaces
 
     }
 }
-*/

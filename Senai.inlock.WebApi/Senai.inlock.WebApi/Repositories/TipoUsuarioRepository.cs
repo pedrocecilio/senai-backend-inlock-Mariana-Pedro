@@ -1,5 +1,4 @@
-﻿/*
-using Senai.inlock.WebApi.Domains;
+﻿using Senai.inlock.WebApi.Domains;
 using Senai.inlock.WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -14,8 +13,8 @@ namespace Senai.inlock.WebApi.Repositories
         /// <summary>
         /// String de conexão com o banco de dados que recebe os parâmetros
         /// </summary>
-        //private string stringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Peoples; integrated security=true;";
-        private string connection = "Data Source=DESKTOP-GCOFA7F\\SQLEXPRESS; initial catalog=Peoples; user Id=sa; pwd=sa@132";
+        private string connection = "Data Source = DESKTOP-FG58JV4\\SQLEXPRESS; initial catalog= Inlock_Games_Manha; integrated security=true;";
+        //private string connection = "Data Source = DEV21\\SQLEXPRESS; initial catalog= Inlock_Games_Manha; user Id=sa; pwd=sa@132";
 
         /// <summary>
         /// Atualiza um tipo de usuário existente
@@ -28,14 +27,14 @@ namespace Senai.inlock.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(connection))
             {
                 // Declara a query que será executada
-                string queryUpdate = "UPDATE TiposUsuario SET Titulo = @Titulo WHERE Id_TipoUsuario = @ID";
+                string queryUpdate = "UPDATE TipoUsuario SET TituloTipoUsuario = @TituloTipoUsuario WHERE Id_TipoUsuario = @ID";
 
                 // Declara o SqlCommand passando o comando a ser executado e a conexão
                 using (SqlCommand cmd = new SqlCommand(queryUpdate, con))
                 {
                     // Passa os valores dos parâmetros
                     cmd.Parameters.AddWithValue("@ID", id);
-                    cmd.Parameters.AddWithValue("@Titulo", TipoUsuarioAtualizado.Titulo);
+                    cmd.Parameters.AddWithValue("@TituloTipoUsuario", TipoUsuarioAtualizado.TituloTipoUsuario);
 
                     // Abre a conexão com o banco de dados
                     con.Open();
@@ -57,7 +56,7 @@ namespace Senai.inlock.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(connection))
             {
                 // Declara a query que será executada
-                string querySelectById = "SELECT Id_TipoUsuario, Titulo FROM TipoUsuario WHERE Id_TipoUsuario = @ID";
+                string querySelectById = "SELECT Id_TipoUsuario, TituloTipoUsuario FROM TipoUsuario WHERE Id_TipoUsuario = @ID";
 
                 // Abre a conexão com o banco de dados
                 con.Open();
@@ -83,7 +82,7 @@ namespace Senai.inlock.WebApi.Repositories
                             // Atribui às propriedades os valores das colunas da tabela do banco
                             Id_TipoUsuario = Convert.ToInt32(rdr["Id_TipoUsuario"])
                             ,
-                            Titulo = rdr["Titulo"].ToString()
+                            TituloTipoUsuario = rdr["TituloTipoUsuario"].ToString()
                         };
 
                         // Retorna o tipoUsuario buscado
@@ -106,13 +105,13 @@ namespace Senai.inlock.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(connection))
             {
                 // Declara a query que será executada
-                string queryInsert = "INSERT INTO TipoUsuario(Titulo) VALUES (@Titulo)";
+                string queryInsert = "INSERT INTO TipoUsuario(TituloTipoUsuario) VALUES (@TituloTipoUsuario)";
 
                 // Declara o comando passando a query e a conexão
                 using (SqlCommand cmd = new SqlCommand(queryInsert, con))
                 {
                     // Passa o valor do parâmetro
-                    cmd.Parameters.AddWithValue("@Titulo", novoTipoUsuario.Titulo);
+                    cmd.Parameters.AddWithValue("@TituloTipoUsuario", novoTipoUsuario.TituloTipoUsuario);
 
                     // Abre a conexão com o banco de dados
                     con.Open();
@@ -163,7 +162,7 @@ namespace Senai.inlock.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(connection))
             {
                 // Declara a instrução a ser executada
-                string querySelectAll = "SELECT Id_TipoUsuario, Titulo FROM TipoUsuario";
+                string querySelectAll = "SELECT Id_TipoUsuario, TituloTipoUsuario FROM TipoUsuario";
 
                 // Abre a conexão com o banco de dados
                 con.Open();
@@ -186,7 +185,7 @@ namespace Senai.inlock.WebApi.Repositories
                             // Atribui às propriedades os valores das colunas da tabela do banco
                             Id_TipoUsuario = Convert.ToInt32(rdr["Id_TipoUsuario"])
                             ,
-                            Titulo = rdr["Titulo"].ToString()
+                            TituloTipoUsuario = rdr["TituloTipoUsuario"].ToString()
                         };
 
                         // Adiciona o tipoUsuario criado à lista tiposUsuario
@@ -198,7 +197,5 @@ namespace Senai.inlock.WebApi.Repositories
             // Retorna a lista de tipos de usuário
             return tiposUsuario;
         }
-        
     }
 }
-*/

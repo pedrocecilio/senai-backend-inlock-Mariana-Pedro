@@ -10,12 +10,14 @@ namespace Senai.inlock.WebApi.Repositories
 {
     public class JogosRepository : IJogosRepository
     {
-        private string stringConexao = "Data Source=DEV601\\SQLEXPRESS; initial catalog=Inlock_Games_Manha; user Id=sa; pwd=sa@132";
-  
+
+        private string connection = "Data Source = DESKTOP-FG58JV4\\SQLEXPRESS; initial catalog= Inlock_Games_Manha; integrated security=true;";
+        // private string connection = "Data Source=DEV601\\SQLEXPRESS; initial catalog=Inlock_Games_Manha; user Id=sa; pwd=sa@132";
+
         //buscar por id
         public JogosDomains BuscarPorId(int id)
         {
-            using (SqlConnection con = new SqlConnection(stringConexao))
+            using (SqlConnection con = new SqlConnection(connection))
             {
                 string querySelectById = "SELECT Id_Jogos, NomeJogo FROM Jogos WHERE Id_Jogos = @ID";
                 con.Open();
@@ -41,7 +43,7 @@ namespace Senai.inlock.WebApi.Repositories
         //cadastrar
         public void Cadastrar(JogosDomains NovoJogo)
         {
-            using (SqlConnection con = new SqlConnection(stringConexao))
+            using (SqlConnection con = new SqlConnection(connection))
             {
                 string queryInsert = "INSERT INTO Jogos(NomeJogo,Descricao,DataLancamento,Preco,Id_Estudio)" +
                                         " VALUES (@NomeJogo,@Descricao,@DataLancamento,@Preco,@Id_Estudio)";
@@ -60,7 +62,7 @@ namespace Senai.inlock.WebApi.Repositories
         //deletar
         public void Deletar(int id)
         {
-            using (SqlConnection con = new SqlConnection(stringConexao))
+            using (SqlConnection con = new SqlConnection(connection))
             {
                 string queryDelete = "DELETE FROM Jogos WHERE Id_Jogos = @ID";
                 using (SqlCommand cmd = new SqlCommand(queryDelete, con))
@@ -75,7 +77,7 @@ namespace Senai.inlock.WebApi.Repositories
         public List<JogosDomains> listar()
         {
             List<JogosDomains> jogos = new List<JogosDomains>();
-            using (SqlConnection con = new SqlConnection(stringConexao))
+            using (SqlConnection con = new SqlConnection(connection))
             {
                 string querySelectAll = "select Id_Jogos, NomeJogo , Descricao ,DataLancamento, Preco, Estudio.NomeEstudio, Estudio.Id_Estudio from Jogos" +
                                        " inner join Estudio on Estudio.Id_Estudio = Jogos.Id_Estudio";

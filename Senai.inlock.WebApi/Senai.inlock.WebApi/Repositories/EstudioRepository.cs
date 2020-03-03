@@ -13,12 +13,12 @@ namespace Senai.inlock.WebApi.Repositories
    
     public class EstudioRepository : IEstudioRepository
     {
-        private string stringConexao = "Data Source=DEV601\\SQLEXPRESS; initial catalog=Inlock_Games_Manha; user Id=sa; pwd=sa@132";
-       // private string stringConexao = "Data Source=LAPTOP-HB597BA2\\SQLEXPRESS; initial catalog=Inlock_Game_Manha; integrated security=true;";
+        // private string connection = "Data Source=DEV601\\SQLEXPRESS; initial catalog=Inlock_Games_Manha; user Id=sa; pwd=sa@132";
+        private string connection = "Data Source = DESKTOP-FG58JV4\\SQLEXPRESS; initial catalog= Inlock_Games_Manha; integrated security=true;";
         //atualizar ok
         public void Atualizar(int id, EstudioDomains EstudioAtualizado)
         {
-                using (SqlConnection con = new SqlConnection(stringConexao))
+                using (SqlConnection con = new SqlConnection(connection))
                 {
                     string queryUpdate = "UPDATE Estudio SET NomeEstudio = @NomeEstudio WHERE Id_Estudio = @ID";
                     using (SqlCommand cmd = new SqlCommand(queryUpdate, con))
@@ -34,7 +34,7 @@ namespace Senai.inlock.WebApi.Repositories
         //Buscar por id ok
         public EstudioDomains BuscarPorId(int id)
         {
-                using (SqlConnection con = new SqlConnection(stringConexao))
+                using (SqlConnection con = new SqlConnection(connection))
                 {
                     string querySelectById = "SELECT Id_Estudio, NomeEstudio FROM Estudio WHERE Id_Estudio = @ID";
                     con.Open();
@@ -60,7 +60,7 @@ namespace Senai.inlock.WebApi.Repositories
         public void Cadastrar(EstudioDomains NovoEstudio)
         {
             
-                using (SqlConnection con = new SqlConnection(stringConexao))
+                using (SqlConnection con = new SqlConnection(connection))
                 {
                     string queryInsert = "INSERT INTO Estudio(NomeEstudio) VALUES (@NomeEstudio)";
                     using (SqlCommand cmd = new SqlCommand(queryInsert, con))
@@ -76,7 +76,7 @@ namespace Senai.inlock.WebApi.Repositories
         //deletar ok
         public void Deletar(int id)
         {
-                using (SqlConnection con = new SqlConnection(stringConexao))
+                using (SqlConnection con = new SqlConnection(connection))
                 {
                     string queryDelete = "DELETE FROM Estudio WHERE Id_Estudio = @ID";
                     using (SqlCommand cmd = new SqlCommand(queryDelete, con))
@@ -92,7 +92,7 @@ namespace Senai.inlock.WebApi.Repositories
         public List<EstudioDomains> listar()
         {
                 List<EstudioDomains> estudios = new List<EstudioDomains>();
-                using (SqlConnection con = new SqlConnection(stringConexao))
+                using (SqlConnection con = new SqlConnection(connection))
                 {
                     string querySelectAll = "SELECT * FROM Estudio";
                     con.Open();

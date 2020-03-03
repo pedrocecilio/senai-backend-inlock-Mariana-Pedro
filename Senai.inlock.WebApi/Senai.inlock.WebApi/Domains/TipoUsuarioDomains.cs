@@ -1,5 +1,4 @@
-﻿
-/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,8 +12,7 @@ namespace Senai.inlock.WebApi.Domains
 
         // Define que o título do tipo de usuário é obrigatório
         [Required(ErrorMessage = "O título do tipo de usuário é obrigatório!")]
-        public string Titulo { get; set; }
-    
+        public string TituloTipoUsuario { get; set; }
+
     }
 }
-*/

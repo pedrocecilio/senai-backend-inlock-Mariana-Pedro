@@ -56,8 +56,8 @@ namespace Senai.inlock.WebApi.Controller
 
             // Gera o token
             var token = new JwtSecurityToken(            // Importante lembrar
-                issuer: "Peoples.WebApi",                // emissor do token
-                audience: "Peoples.WebApi",              // destinatário do token
+                issuer: "Senai.inlock.WebApi",                // emissor do token
+                audience: "Senai.inlock.WebApi",              // destinatário do token
                 claims: claims,                          // dados definidos acima
                 expires: DateTime.Now.AddMinutes(30),    // tempo de expiração
                 signingCredentials: creds                // credenciais do token
