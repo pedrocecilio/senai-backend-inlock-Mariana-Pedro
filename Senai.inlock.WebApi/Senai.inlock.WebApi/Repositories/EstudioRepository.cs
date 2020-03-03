@@ -13,7 +13,8 @@ namespace Senai.inlock.WebApi.Repositories
    
     public class EstudioRepository : IEstudioRepository
     {
-        private string stringConexao = "Data Source=LAPTOP-HB597BA2\\SQLEXPRESS; initial catalog=Inlock_Game_Manha; integrated security=true;";
+        private string stringConexao = "Data Source=DEV601\\SQLEXPRESS; initial catalog=Inlock_Games_Manha; user Id=sa; pwd=sa@132";
+       // private string stringConexao = "Data Source=LAPTOP-HB597BA2\\SQLEXPRESS; initial catalog=Inlock_Game_Manha; integrated security=true;";
         //atualizar ok
         public void Atualizar(int id, EstudioDomains EstudioAtualizado)
         {
@@ -44,12 +45,12 @@ namespace Senai.inlock.WebApi.Repositories
                         rdr = cmd.ExecuteReader();
                         if (rdr.Read())
                         {
-                            EstudioDomains genero = new EstudioDomains
+                            EstudioDomains estudio = new EstudioDomains
                             {
                                 Id_Estudio = Convert.ToInt32(rdr["Id_Estudio"]),
                                 NomeEstudio = rdr["NomeEstudio"].ToString()
                             };
-                            return genero;
+                            return estudio;
                         }
                         return null;
                     }
@@ -93,7 +94,7 @@ namespace Senai.inlock.WebApi.Repositories
                 List<EstudioDomains> estudios = new List<EstudioDomains>();
                 using (SqlConnection con = new SqlConnection(stringConexao))
                 {
-                    string querySelectAll = "SELECT Id_Estudio, NomeEstudio FROM Estudio";
+                    string querySelectAll = "SELECT * FROM Estudio";
                     con.Open();
                     SqlDataReader rdr;
                     using (SqlCommand cmd = new SqlCommand(querySelectAll, con))
@@ -104,7 +105,7 @@ namespace Senai.inlock.WebApi.Repositories
                             EstudioDomains estudio = new EstudioDomains
                             {
                                 Id_Estudio = Convert.ToInt32(rdr["Id_Estudio"]),
-                                NomeEstudio = rdr["Nome"].ToString()    
+                                NomeEstudio = rdr["NomeEstudio"].ToString()    
                             };
                             estudios.Add(estudio);
                         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -27,5 +28,7 @@ namespace Senai.inlock.WebApi.Domains
         public int Id_TipoUsuario { get; set; }
 
         public TipoUsuarioDomains TipoUsuario { get; set; }
+       
     }
 }
+*/

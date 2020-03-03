@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿
+/*using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Senai.inlock.WebApi.Domains;
 using Senai.inlock.WebApi.Interfaces;
@@ -165,3 +166,4 @@ namespace Senai.inlock.WebApi.Controller
         }
     }
 }
+*/

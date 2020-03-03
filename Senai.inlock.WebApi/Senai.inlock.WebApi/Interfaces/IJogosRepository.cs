@@ -8,13 +8,11 @@ namespace Senai.inlock.WebApi.Interfaces
 {
    interface IJogosRepository
     {
-        List<EstudioDomains> listar();
+        List<JogosDomains> listar();
 
-        EstudioDomains BuscarPorId(int id);
+        JogosDomains BuscarPorId(int id);
 
-        void Cadastrar(EstudioDomains NovoEstudio);
-
-        void Atualizar(int id, EstudioDomains EstudioAtualizado);
+        void Cadastrar(JogosDomains NovoJogo);
 
         void Deletar(int id);
 

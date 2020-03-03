@@ -1,4 +1,5 @@
-﻿using Senai.inlock.WebApi.Domains;
+﻿/*
+using Senai.inlock.WebApi.Domains;
 using Senai.inlock.WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -197,5 +198,7 @@ namespace Senai.inlock.WebApi.Repositories
             // Retorna a lista de tipos de usuário
             return tiposUsuario;
         }
+        
     }
 }
+*/

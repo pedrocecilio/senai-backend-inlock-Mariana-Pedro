@@ -24,7 +24,8 @@ namespace Senai.inlock.WebApi.Domains
 
         public int Id_Estudio { get; set; }
 
-        public TipoUsuarioDomains TipoUsuario { get; set; }
+        public EstudioDomains Estudio { get; set; }
+
 
 
 

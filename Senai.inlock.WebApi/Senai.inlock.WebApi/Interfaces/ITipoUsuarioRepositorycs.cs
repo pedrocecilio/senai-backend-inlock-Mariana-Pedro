@@ -1,4 +1,6 @@
-﻿using Senai.inlock.WebApi.Domains;
+﻿
+/*
+ using Senai.inlock.WebApi.Domains;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +10,7 @@ namespace Senai.inlock.WebApi.Interfaces
 {
     interface ITipoUsuarioRepositorycs
     {
+        
         /// <summary>
         /// Lista todos os tipos de usuário
         /// </summary>
@@ -39,5 +42,7 @@ namespace Senai.inlock.WebApi.Interfaces
         /// </summary>
         /// <param name="id">ID do tipo de usuário que será deletado</param>
         void Deletar(int id);
+       
     }
 }
+*/

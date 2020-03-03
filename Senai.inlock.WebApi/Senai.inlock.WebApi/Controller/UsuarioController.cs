@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿
+/*using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Senai.inlock.WebApi.Domains;
 using Senai.inlock.WebApi.Interfaces;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Senai.inlock.WebApi.Controller
 {
+    
     /// <summary>
     /// Controller responsável pelos endpoints referentes aos usuários
     /// </summary>
@@ -46,7 +48,7 @@ namespace Senai.inlock.WebApi.Controller
         /// <returns>Retorna uma lista de usuários e um status code 200 - Ok</returns>
         /// dominio/api/Usuarios
         [Authorize(Roles = "1")]    // Somente o tipo de usuário 1 (administrador) pode acessar o endpoint
-        [HttpGet]
+      /* [HttpGet]
         public IActionResult Get()
         {
             // Faz a chamada para o método .Listar()
@@ -166,6 +168,8 @@ namespace Senai.inlock.WebApi.Controller
 
             // Caso não seja, retorna um status code 404 - NotFound com a mensagem
             return NotFound("Nenhum usuário encontrado para o identificador informado");
-        }
+       
     }
+     }
 }
+*/
