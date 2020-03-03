@@ -32,14 +32,10 @@ Senha VARCHAR (255) NOT NULL,
 Id_TipoUsuario INT FOREIGN KEY REFERENCES TipoUsuario (Id_TipoUsuario)
 );
 go
- SELECT * FROM TipoUsuario;
-  SELECT * FROM Usuario;
-   SELECT * FROM Jogos;
-    SELECT * FROM Estudio;
 
 
 
 
 
 
- drop database Inlock_Games_Manha;
+

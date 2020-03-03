@@ -1,4 +1,4 @@
-CREATE DATABASE  InLock_Games_Manha;
+
 
 USE InLock_Games_Manha;
 
@@ -23,5 +23,5 @@ VALUES	('Diablo 3', 'É um jogo que contém bastante ação e é viciante, seja você 
 		('Red Dead Redemption II', 'Jogo eletrônico de ação-aventura western',  '2018-10-26', 'R$ 120', 2)
 GO
 
-SELECT * FROM Estudio
+
 
