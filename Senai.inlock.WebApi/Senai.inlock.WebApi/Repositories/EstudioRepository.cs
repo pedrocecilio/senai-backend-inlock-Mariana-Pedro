@@ -14,7 +14,7 @@ namespace Senai.inlock.WebApi.Repositories
     public class EstudioRepository : IEstudioRepository
     {
         // private string connection = "Data Source=DEV601\\SQLEXPRESS; initial catalog=Inlock_Games_Manha; user Id=sa; pwd=sa@132";
-        private string connection = "Data Source = DESKTOP-FG58JV4\\SQLEXPRESS; initial catalog= Inlock_Games_Manha; integrated security=true;";
+        private string connection = "Data Source = LAPTOP-HB597BA2\\SQLEXPRESS; initial catalog= Inlock_Games_Manha; integrated security=true;";
         //atualizar ok
         public void Atualizar(int id, EstudioDomains EstudioAtualizado)
         {

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.inlock.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Senai.inlock.WebApi.Interfaces.ITipoUsuarioRepositorycs.Listar">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Retorna uma lista de tipos de usuário</returns>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.ITipoUsuarioRepositorycs.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do ID
+            </summary>
+            <param name="id">ID do tipo de usuário que será buscado</param>
+            <returns>Retorna um tipo de usuário buscado</returns>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.ITipoUsuarioRepositorycs.Cadastrar(Senai.inlock.WebApi.Domains.TipoUsuarioDomains)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="novoTipoUsuario">Objeto novoTipoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.ITipoUsuarioRepositorycs.Atualizar(System.Int32,Senai.inlock.WebApi.Domains.TipoUsuarioDomains)">
+            <summary>
+            Atualiza um tipo de usuário existente
+            </summary>
+            <param name="id">ID do tipo de usuário que será alterado</param>
+            <param name="TipoUsuarioAtualizado">Objeto TipoUsuarioAtualizado que será alterado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.ITipoUsuarioRepositorycs.Deletar(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário existente
+            </summary>
+            <param name="id">ID do tipo de usuário que será deletado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.IUsuarioRepositorycs.Listar">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Retorna uma lista de usuários</returns>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.IUsuarioRepositorycs.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuários através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Retorna um usuário buscado</returns>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.IUsuarioRepositorycs.Cadastrar(Senai.inlock.WebApi.Domains.UsuarioDomains)">
+            <summary>
+            Cadastra um usuário
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.IUsuarioRepositorycs.Atualizar(System.Int32,Senai.inlock.WebApi.Domains.UsuarioDomains)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será alterado</param>
+            <param name="UsuarioAtualizado">Objeto UsuarioAtualizado que será alterado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.IUsuarioRepositorycs.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Interfaces.IUsuarioRepositorycs.BuscarPorEmailSenha(System.String,System.String)">
+            <summary>
+            Busca um usuário através do e-mail e da senha
+            </summary>
+            <param name="email">E-mail do usuário</param>
+            <param name="senha">Senha do usuário</param>
+            <returns>Retorna um usuário validado</returns>
+        </member>
+        <member name="F:Senai.inlock.WebApi.Repositories.TipoUsuarioRepository.connection">
+            <summary>
+            String de conexão com o banco de dados que recebe os parâmetros
+            </summary>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.TipoUsuarioRepository.Atualizar(System.Int32,Senai.inlock.WebApi.Domains.TipoUsuarioDomains)">
+            <summary>
+            Atualiza um tipo de usuário existente
+            </summary>
+            <param name="id">ID do tipo de usuário que será atualziado</param>
+            <param name="TipoUsuarioAtualizado">Objeto TipoUsuarioAtualizado que será alterado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.TipoUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do ID
+            </summary>
+            <param name="id">ID do tipo de usuário que será buscado</param>
+            <returns>Retorna um tipo de usuário buscado</returns>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.TipoUsuarioRepository.Cadastrar(Senai.inlock.WebApi.Domains.TipoUsuarioDomains)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="novoTipoUsuario">Objeto novoTipoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.TipoUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário
+            </summary>
+            <param name="id">ID do tipo de usuário que será deletado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.TipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Retorna uma lista de tipos de usuário</returns>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.UsuarioRepository.BuscarPorEmailSenha(System.String,System.String)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="email">E-mail do usuário</param>
+            <param name="senha">Senha do usuário</param>
+            <returns>Retorna um usuário validado</returns>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.UsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuário através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Retorna um usuário buscado</returns>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.UsuarioRepository.Cadastrar(Senai.inlock.WebApi.Domains.UsuarioDomains)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.UsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+        </member>
+        <member name="M:Senai.inlock.WebApi.Repositories.UsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Retorna uma lista de usuários</returns>
+        </member>
+    </members>
+</doc>
