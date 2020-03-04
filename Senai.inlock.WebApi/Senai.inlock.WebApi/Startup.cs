@@ -80,7 +80,7 @@ namespace Senai.inlock.WebApi
             app.UseAuthentication();
 
             //Define a utilização do MVC.
-            app.UseMvc();
+           
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
@@ -89,7 +89,8 @@ namespace Senai.inlock.WebApi
 
             
             });
-           
+            app.UseMvc();
+
         }
     }
 }
